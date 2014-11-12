@@ -5,6 +5,7 @@ module Rulers
       cont = cont.capitalize # "People"
       cont += "Controller" # "PeopleController"
 
+      # This is where the "const_missing" method is invoked for the controller
       [Object.const_get(cont), action]
     end
   end
